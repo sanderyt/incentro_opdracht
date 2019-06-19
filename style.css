@@ -1,0 +1,64 @@
+body {
+    font-family: "Arial", "sans-serif";
+    font-size: 12px;
+}
+
+input {
+    border: 2px solid #cecece;
+    transition: border 0.5s;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ingevuld {
+    border-color: #00b900;
+}
+
+.nietingevuld {
+    border-color: #ff0000;
+}
+
+h1 {
+    color: #fe5000;
+}
+
+/* foutmelding als er niks is ingevuld */
+.message {
+    background-color: #cecece;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+label {
+    display: block;
+    width: 10em;
+    float: left;
+    font-weight: bold;
+}
+
+/* verstuur knop */
+#verstuurknop {
+    background-color: #00b900;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 500ms;
+}
+
+#verstuurknop:hover {
+    background: #32c732;
+}
+
+.loading {
+    display: inline-block;
+}

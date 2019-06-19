@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inschrijfformulier Incentro Opdracht Sander van Rijsoort</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+
+    <body>
+    
+    <h1>Inschrijfformulier</h1>
+        
+        
+        <form>
+        
+            <label>Voorletters:</label>
+            <input type="text" id="voorletters" name="Voorletters" onfocusout=validateVoorletters();>
+            <div class="message"></div> <br><br>
+        
+            <label>Tussenvoegsel:</label>
+            <input type="text" id="tussenvoegsel" name="tussenvoegsel" onfocusout=validateTussenvoegsel();>
+            <div class="message"></div><br><br>
+            
+            <label>Achternaam:</label>
+            <input type="text" id="achternaam" name="Achternaam" onfocusout=validateAchternaam();>
+            <div class="message"></div>
+            
+            <br><br>
+            
+            <label>Postcode:</label>
+            <input type="text" id="postcode" name="Postcode" onfocusout=validatePostcode();>
+            <div class="message"></div>
+            
+            <br><br>
+            
+            <label>Huisnummer:</label>
+            <input type="text" id="huisnummer" name="Huisnummer" onfocusout=getOutput();validateHuisnummer();>
+            <div class="message"></div>
+            
+            <br><br>
+            
+            <label>Straatnaam:</label>
+            <input type="text" id="straatnaam" name="straatnaam" value="Hoofdweg">
+            <div class="message"></div><div class="loading"></div>
+            
+            <br><br>
+            
+            <label>Stad:</label>
+            <input type="text" id="stad" name="stad" value="">
+            <div class="message"></div><div class="loading"></div>
+            
+            <br><br>
+            
+            <label>E-mailadres:</label>
+            <input type="text" id="email" name="Email" onfocusout=validateEmail();>
+            <div class="message"></div>
+            
+            <br><br>
+            
+            <button id="verstuurknop">Versturen</button>
+            
+        </form>
+        
+    </body>
+    
+    <script src="script.js"></script>
+    
+    
+</html>
